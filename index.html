@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Generatore password</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">  </head>
+  <body>
+
+    <div class="container">
+      
+      <div id="hide1">
+        <h1>Giochiamo a dadi!!!</h1>
+        <h3>Vinci nel gioco dei dadi per accedere al generatore password.Vincerai solo se il tuo numero sarà maggiore del numero computer!Clicca sui dadi!</h3>
+        <div id="dadi">
+          <img src="img/dadi.png" alt="dadi">
+        </div>
+        <div id="mex2"></div>
+        <button type="button" id="btn1" class="bottone" name="button">CLICCA QUI</button>
+      </div>
+      <div id="hide">
+        <h1>GENERATORE DI PASSWORD</h1>
+        <h3>Scegli che tipo di password desideri ed inserisci la tua data di nascita.</h3>
+        <form action="index.html" method="post">
+          <div>
+            <label for="ottale">Ottale</label>
+            <input type="radio" name="check-list" value="" class="check-elements">
+            <label for="esadecimale">Esadecimale</label>
+            <input type="radio" name="check-list" value="" class="check-elements">
+            <label for="32-bit">32-bit</label>
+            <input type="radio" name="check-list" value="" class="check-elements">
+          </div>
+          <div>
+            <label for="giorno">Inserisci un giorno</label>
+            <input type="text" id="giorno" name="giorno" placeholder="1-31" value="">
+          </div>
+          <div>
+            <label for="giorno">Inserisci un mese</label>
+            <input type="text" id="mese" name="mese" placeholder="1-12" value="">
+          </div>
+          <div>
+            <label for="giorno">Inserisci un anno</label>
+            <input type="text" id="anno" name="anno" placeholder="es. 1999" value="">
+          </div>
+          <div>
+            <button type="button" id="btn" class="bottone" name="button">GENERA</button>
+          </div>
+        </form>
+        <div id="mex"></div>
+      </div>
+
+    </div>
+
+  <script src="js/script.js" charset="utf-8"></script>
+
+  </body>
+</html>
